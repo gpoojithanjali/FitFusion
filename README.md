@@ -157,9 +157,6 @@ API key stored securely in `.env`
   - Weather (weather API demo)
 - Data fetched using Axios and GraphQL client
 
-Screenshot:
-
-![Weather Page](./screenshots/weather-page.png) <!-- Add if you have -->
 
 ---
 
@@ -210,7 +207,7 @@ Location: utils/logger.js
 
 Status badge:
 
-![CI Status](https://github.com/username/fitfusion/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/gpoojithanjali/FitFusion/actions/workflows/main.yml/badge.svg)
 
 ---
 
@@ -257,7 +254,6 @@ docker-compose up --build
 ## 📫 Postman/API Testing
 
 - GraphQL examples provided in `/docs/graphql-queries.md`
-- Optional: import this collection into Postman
 - Health Check: GET /health
 
 ---
@@ -269,12 +265,6 @@ Docker containers deployable via:
 ```bash
 docker-compose -f docker-compose.prod.yml up -d
 ```
-
-(Optional) Host on services like:
-
-- Render
-- Heroku (via container)
-- DigitalOcean (Docker droplet)
 
 ---
 
