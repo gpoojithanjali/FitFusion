@@ -1,0 +1,7 @@
+[2025-04-14T21:03:39.184Z] ERROR: ❌ Error starting server: Cannot drop table 'users' referenced by a foreign key constraint 'meals_ibfk_1' on table 'meals'.
+[2025-04-15T00:31:05.811Z] ERROR: API call failed for kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
+[2025-04-15T00:31:05.849Z] ERROR: Error fetching weather for kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
+[2025-04-15T00:31:10.371Z] ERROR: API call failed for kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
+[2025-04-15T00:31:10.372Z] ERROR: Error fetching weather for kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
+[2025-04-15T00:31:32.327Z] ERROR: API call failed for Kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
+[2025-04-15T00:31:32.327Z] ERROR: Error fetching weather for Kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
