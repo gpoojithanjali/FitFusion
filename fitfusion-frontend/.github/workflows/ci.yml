@@ -1,3 +1,5 @@
+# File: .github/workflows/frontend-ci.yml
+
 name: Frontend CI
 
 on:
@@ -9,32 +11,30 @@ on:
       - 'fitfusion-frontend/**'
 
 jobs:
-  build-frontend:
+  build:
     runs-on: ubuntu-latest
 
     defaults:
       run:
-        working-directory: fitfusion-frontend
+        working-directory: ./fitfusion-frontend
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies (with legacy peer deps)
+        run: npm install --legacy-peer-deps
 
-      - name: Build app
+      - name: Lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build
         run: npm run build
-
-      - name: Lint (optional)
-        run: |
-          if [ -f .eslintrc.js ]; then
-            npx eslint .
-          else
-            echo "No ESLint config found, skipping lint step."
-          fi
