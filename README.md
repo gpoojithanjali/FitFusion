@@ -251,11 +251,229 @@ docker-compose up --build
 
 ---
 
-## 📫 Postman/API Testing
+## 🧪 Postman/API Testing Collection
 
-- GraphQL examples provided in `/docs/graphql-queries.md`
-- Health Check: GET /health
+### 🩺 Health Check
+```
+GET http://localhost:3000/health
+```
 
+---
+
+### 👤 Users
+
+- `GET /users` – Get all users  
+- `GET /users/:id` – Get user by ID  
+- `POST /users` – Create user  
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "secret123"
+}
+```
+
+- `PUT /users/:id` – Update user  
+```json
+{
+  "name": "Updated Name"
+}
+```
+
+- `DELETE /users/:id` – Delete user
+
+---
+
+### 🥗 Meals
+
+- `GET /meals` – Get all meals  
+- `GET /meals/:id` – Get meal by ID  
+- `POST /meals` – Create meal  
+```json
+{
+  "userId": 1,
+  "name": "Oats and berries",
+  "calories": 320,
+  "time": "08:30"
+}
+```
+
+- `PUT /meals/:id` – Update meal  
+- `DELETE /meals/:id` – Delete meal
+
+---
+
+### 🏋️ Workouts
+
+- `GET /workouts` – Get all workouts  
+- `GET /workouts/:id` – Get workout by ID  
+- `POST /workouts` – Create workout  
+```json
+{
+  "userId": 1,
+  "type": "HIIT",
+  "duration": 45,
+  "date": "2025-04-21"
+}
+```
+
+- `PUT /workouts/:id` – Update workout  
+- `DELETE /workouts/:id` – Delete workout
+
+---
+
+### 🎯 Goals
+
+- `GET /goals` – Get all goals  
+- `GET /goals/:id` – Get goal by ID  
+- `POST /goals` – Create goal  
+```json
+{
+  "userId": 1,
+  "targetWeight": 68,
+  "targetDate": "2025-07-01"
+}
+```
+
+- `PUT /goals/:id` – Update goal  
+- `DELETE /goals/:id` – Delete goal
+
+---
+
+### 🧑‍🏫 Trainers
+
+- `GET /trainers` – Get all trainers  
+- `GET /trainers/:id` – Get trainer by ID  
+- `POST /trainers` – Create trainer  
+```json
+{
+  "name": "Coach Maya",
+  "specialization": "Yoga"
+}
+```
+
+- `PUT /trainers/:id` – Update trainer  
+- `DELETE /trainers/:id` – Delete trainer
+
+---
+
+### 🔐 Auth
+
+- `POST /auth/login` – Authenticate user  
+```json
+{
+  "email": "john@example.com",
+  "password": "secret123"
+}
+```
+
+---
+
+### ☀️ Weather
+
+- `GET /weather?city=Boston` – Get weather by city
+
+---
+
+## 🔮 GraphQL API
+
+### Endpoint
+
+```
+POST http://localhost:3000/graphql
+```
+
+### Playground
+
+```
+GET http://localhost:3000/graphiql
+```
+
+---
+
+### 📥 Queries
+
+#### Fetch single user with nested goals & meals
+```graphql
+query {
+  getUser(id: 1) {
+    id
+    name
+    email
+    meals {
+      name
+      calories
+    }
+    goal {
+      targetWeight
+    }
+  }
+}
+```
+
+#### Fetch weather
+```graphql
+query {
+  getWeather(city: "London") {
+    city
+    temperature
+    description
+  }
+}
+```
+
+---
+
+### 🛠 Mutations
+
+#### Create user
+```graphql
+mutation {
+  createUser(input: {
+    name: "Alice",
+    email: "alice@mail.com",
+    password: "pass123"
+  }) {
+    id
+    name
+  }
+}
+```
+
+#### Create workout
+```graphql
+mutation {
+  createWorkout(input: {
+    userId: 1,
+    type: "Cycling",
+    duration: 60,
+    date: "2025-04-21"
+  }) {
+    id
+    type
+  }
+}
+```
+
+#### Update goal
+```graphql
+mutation {
+  updateGoal(id: 1, input: {
+    targetWeight: 65,
+    targetDate: "2025-06-01"
+  }) {
+    id
+    targetWeight
+  }
+}
+```
+
+#### Delete meal
+```graphql
+mutation {
+  deleteMeal(id: 5)
+}
+```
 ---
 
 ## 📦 Deployment
