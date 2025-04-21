@@ -5,3 +5,5 @@
 [2025-04-15T00:31:10.372Z] ERROR: Error fetching weather for kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
 [2025-04-15T00:31:32.327Z] ERROR: API call failed for Kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
 [2025-04-15T00:31:32.327Z] ERROR: Error fetching weather for Kolkata: getaddrinfo ENOTFOUND api.openweathermap.org
+[2025-04-15T13:14:20.158Z] ERROR: API call failed for himachal: Request failed with status code 404
+[2025-04-15T13:14:20.159Z] ERROR: Error fetching weather for himachal: Request failed with status code 404

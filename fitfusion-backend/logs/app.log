@@ -268,3 +268,73 @@
 [2025-04-15T05:46:05.577Z] INFO: Calling OpenWeatherMap API for city: London
 [2025-04-15T05:46:05.882Z] INFO: API call success for city: London
 [2025-04-15T05:46:05.883Z] INFO: Weather data received for London
+[2025-04-15T07:11:59.077Z] INFO: ✅ Connected to MySQL
+[2025-04-15T07:11:59.289Z] INFO: ✅ Tables synced
+[2025-04-15T07:11:59.301Z] INFO: 🚀 Server running at http://localhost:3000
+[2025-04-15T07:25:12.574Z] INFO: Fetching weather for city: Kolkata
+[2025-04-15T07:25:12.589Z] INFO: Calling OpenWeatherMap API for city: Kolkata
+[2025-04-15T07:25:13.377Z] INFO: API call success for city: Kolkata
+[2025-04-15T07:25:13.402Z] INFO: Weather data received for Kolkata
+[2025-04-15T07:25:19.316Z] INFO: Fetching weather for city: London
+[2025-04-15T07:25:19.317Z] INFO: Calling OpenWeatherMap API for city: London
+[2025-04-15T07:25:19.469Z] INFO: API call success for city: London
+[2025-04-15T07:25:19.471Z] INFO: Weather data received for London
+[2025-04-15T07:25:25.623Z] INFO: Fetching weather for city: New York
+[2025-04-15T07:25:25.625Z] INFO: Calling OpenWeatherMap API for city: New York
+[2025-04-15T07:25:26.135Z] INFO: API call success for city: New York
+[2025-04-15T07:25:26.140Z] INFO: Weather data received for New York
+[2025-04-15T09:21:27.506Z] INFO: GET /graphiql called
+[2025-04-15T09:25:05.266Z] INFO: Fetching weather for city: Kolkata
+[2025-04-15T09:25:05.267Z] INFO: Calling OpenWeatherMap API for city: Kolkata
+[2025-04-15T09:25:05.562Z] INFO: API call success for city: Kolkata
+[2025-04-15T09:25:05.565Z] INFO: Weather data received for Kolkata
+[2025-04-15T09:25:10.809Z] INFO: Fetching weather for city: London
+[2025-04-15T09:25:10.810Z] INFO: Calling OpenWeatherMap API for city: London
+[2025-04-15T09:25:10.995Z] INFO: API call success for city: London
+[2025-04-15T09:25:10.999Z] INFO: Weather data received for London
+[2025-04-15T09:25:16.617Z] INFO: Fetching weather for city: New York
+[2025-04-15T09:25:16.624Z] INFO: Calling OpenWeatherMap API for city: New York
+[2025-04-15T09:25:19.995Z] INFO: API call success for city: New York
+[2025-04-15T09:25:19.999Z] INFO: Weather data received for New York
+[2025-04-15T13:04:46.534Z] INFO: ✅ Connected to MySQL
+[2025-04-15T13:04:47.119Z] INFO: ✅ Tables synced
+[2025-04-15T13:04:47.133Z] INFO: 🚀 Server running at http://localhost:3000
+[2025-04-15T13:08:13.834Z] INFO: GET /graphiql called
+[2025-04-15T13:12:57.129Z] INFO: Fetching weather for city: new york
+[2025-04-15T13:12:57.141Z] INFO: Calling OpenWeatherMap API for city: new york
+[2025-04-15T13:13:00.469Z] INFO: API call success for city: new york
+[2025-04-15T13:13:00.492Z] INFO: Weather data received for new york
+[2025-04-15T13:14:02.844Z] INFO: Fetching weather for city: berlin
+[2025-04-15T13:14:02.849Z] INFO: Calling OpenWeatherMap API for city: berlin
+[2025-04-15T13:14:03.113Z] INFO: API call success for city: berlin
+[2025-04-15T13:14:03.114Z] INFO: Weather data received for berlin
+[2025-04-15T13:14:11.962Z] INFO: Fetching weather for city: kolkata
+[2025-04-15T13:14:11.964Z] INFO: Calling OpenWeatherMap API for city: kolkata
+[2025-04-15T13:14:12.208Z] INFO: API call success for city: kolkata
+[2025-04-15T13:14:12.209Z] INFO: Weather data received for kolkata
+[2025-04-15T13:14:19.796Z] INFO: Fetching weather for city: himachal
+[2025-04-15T13:14:19.805Z] INFO: Calling OpenWeatherMap API for city: himachal
+[2025-04-15T13:14:20.158Z] ERROR: API call failed for himachal: Request failed with status code 404
+[2025-04-15T13:14:20.159Z] ERROR: Error fetching weather for himachal: Request failed with status code 404
+[2025-04-15T13:14:30.261Z] INFO: Fetching weather for city: himachal pradesh
+[2025-04-15T13:14:30.264Z] INFO: Calling OpenWeatherMap API for city: himachal pradesh
+[2025-04-15T13:14:30.454Z] INFO: API call success for city: himachal pradesh
+[2025-04-15T13:14:30.455Z] INFO: Weather data received for himachal pradesh
+[2025-04-15T13:14:41.281Z] INFO: Fetching weather for city: shimla
+[2025-04-15T13:14:41.283Z] INFO: Calling OpenWeatherMap API for city: shimla
+[2025-04-15T13:14:41.496Z] INFO: API call success for city: shimla
+[2025-04-15T13:14:41.503Z] INFO: Weather data received for shimla
+[2025-04-15T13:15:09.425Z] INFO: Fetching weather for city: kulu
+[2025-04-15T13:15:09.426Z] INFO: Calling OpenWeatherMap API for city: kulu
+[2025-04-15T13:15:09.646Z] INFO: API call success for city: kulu
+[2025-04-15T13:15:09.662Z] INFO: Weather data received for kulu
+[2025-04-15T13:15:23.234Z] INFO: Fetching weather for city: manali
+[2025-04-15T13:15:23.245Z] INFO: Calling OpenWeatherMap API for city: manali
+[2025-04-15T13:15:23.476Z] INFO: API call success for city: manali
+[2025-04-15T13:15:23.488Z] INFO: Weather data received for manali
+[2025-04-15T13:15:38.756Z] INFO: Fetching weather for city: darjeeling
+[2025-04-15T13:15:38.787Z] INFO: Calling OpenWeatherMap API for city: darjeeling
+[2025-04-15T13:15:38.970Z] INFO: API call success for city: darjeeling
+[2025-04-15T13:15:38.973Z] INFO: Weather data received for darjeeling
+[2025-04-15T13:21:47.894Z] INFO: GET /health called
+[2025-04-15T13:22:03.263Z] INFO: GET / called
